@@ -1,1 +1,3 @@
 # GitPractice
+
+HAHAH, FU FROM GITHUB
