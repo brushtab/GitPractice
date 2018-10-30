@@ -4,9 +4,9 @@ node()
   {
     echo "123"
     logSteps = currentBuild.getRawBuild().getLog(100)
-    logSteps.each
+    for (item in logSteps)
     {
-      echo '${it}'
+      echo item
     }
   }
 }
