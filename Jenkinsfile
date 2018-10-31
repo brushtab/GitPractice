@@ -16,11 +16,12 @@ node()
     echo "Finished run 1090"
     echo "Run Id is 1090"
     sleep 5
-    logSteps = currentBuild.getRawBuild().getLog(3)
+    logSteps = currentBuild.getRawBuild().getLog(20)
     for (item in logSteps)
     {
       if (item.contains("Run Id"))
       {
+        echo "FOUND TREASURE"
         echo item
       }
     }
